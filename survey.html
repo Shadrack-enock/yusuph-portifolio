@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Survey - Personal Portfolio">
+    <meta name="keywords" content="Survey, Web Form">
+    <meta name="author" content="Adam Munda">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="survey.html">Survey</a></li>
+           
+        </ul>
+        <nav  align="right">
+            <ul>
+                <li><button onclick="toggleTheme()">light/dark</button></li>
+            </ul>
+        </nav>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h1>Survey</h1>
+        <form>
+            <label>How did you hear about me?</label><br>
+            <input type="radio" name="source" value="linkedin" required> LinkedIn<br>
+            <input type="radio" name="source" value="github"> GitHub<br>
+            <input type="radio" name="source" value="friend"> Friend<br><br>
+
+            <label>What services are you interested in?</label><br>
+            <input type="checkbox" name="services" value="webdev"> Web Development<br>
+            <input type="checkbox" name="services" value="design"> UI/UX Design<br>
+            <input type="checkbox" name="services" value="seo"> SEO Optimization<br><br>
+
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Adam Munda</p>
+</footer>
+<script src="script.js" defer></script>
+
+</body>
+</html>

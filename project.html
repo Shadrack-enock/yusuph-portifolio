@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio Projects - Personal Website">
+    <meta name="keywords" content="Projects, Web Development, Portfolio">
+    <meta name="author" content="Adam Munda">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<header>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="survey.html">Survey</a></li>
+            
+        </ul>
+        <nav  align="right">
+            <ul>
+                <li><button onclick="toggleTheme()">light/dark</button></li>
+            </ul>
+        </nav>
+    </nav>
+</header>
+
+<main>
+    <section class="three-column">
+        <article class="project">
+            <h2>Project One</h2>
+            <img src="images/project1.jpg" alt="Project One" width="300">
+            <p>Landing page design using HTML, CSS, and JavaScript.</p>
+            <button onclick="toggleDetails(this)">Show Details</button>
+            <div class="details" style="display:none;">
+                <p>Built with responsive design, animations, and form validation to enhance user interaction.</p>
+            </div>
+        </article>
+
+        <article class="project">
+            <h2>Project Two</h2>
+            <img src="images/project2.jpg" alt="Project Two" width="300">
+            <p>E-commerce website demo.</p>
+            <button onclick="toggleDetails(this)">Show Details</button>
+            <div class="details" style="display:none;">
+                <p>Implemented shopping cart, product catalog, and integrated a dummy payment gateway.</p>
+            </div>
+        </article>
+
+        <article class="project">
+            <h2>Project Three</h2>
+            <img src="images/project3.jpg" alt="Project Three" width="300">
+            <p>Personal portfolio website (this site!).</p>
+            <button onclick="toggleDetails(this)">Show Details</button>
+            <div class="details" style="display:none;">
+                <p>Features dark/light mode toggle, form validation, and fully responsive design across devices.</p>
+            </div>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Adam Munda</p>
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

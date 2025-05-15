@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Portfolio showcasing web development skills.">
+    <meta name="keywords" content="Portfolio, Web Developer, HTML, CSS, JavaScript">
+    <meta name="author" content="Adam Munda">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="greetUser()">
+
+    <header>
+     <figure align="left">
+            <img src="IMG-20241110-WA0020.jpg" alt="Profile Picture" width="50">
+        </figure>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+            <nav  align="right">
+                <ul>
+                    <li><button onclick="toggleTheme()">light/dark</button></li>
+                </ul>
+            </nav>
+           
+        </nav>
+    </header>
+
+    <main>
+        <section>
+          
+            <h1 id="greeting">Welcome!</h1>
+            <p>Hello! I am a passionate web developer ready to build your next website.</p>
+           
+        </section>
+        <section>
+            <h2>Embedded Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dD2EISBDjWM" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Adam Munda</p>
+    </footer>
+</body>
+</html>

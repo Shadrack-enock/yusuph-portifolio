@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="About Me - Personal Portfolio">
+    <meta name="keywords" content="About, Skills, Education">
+    <meta name="author" content="Adam Munda">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="survey.html">Survey</a></li>
+            
+        </ul>
+        <nav  align="right">
+            <ul>
+                <li><button onclick="toggleTheme()">light/dark</button></li>
+            </ul>
+        </nav>
+    </nav>
+</header>
+
+<main>
+    <section class="two-column">
+        <article>
+            <h1>About Me</h1>
+            <p>I am a creative and detail-oriented web developer...</p>
+
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5
+                    <ul>
+                        <li>Forms</li>
+                        <li>Semantic Elements</li>
+                    </ul>
+                </li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h2>Education</h2>
+            <ol>
+                <li>BSc in Health Information Science (HIS)</li>
+                <li>Dip in Computer Science (CS)</li>
+
+            </ol>
+        </article>
+        <aside>
+            <h2>Location Map</h2>
+            <img src="images/map.jpg" usemap="#workmap" alt="Office Map" width="400">
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Office" href="https://maps.google.com">
+            </map>
+        </aside>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025  Adam Munda</p>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
